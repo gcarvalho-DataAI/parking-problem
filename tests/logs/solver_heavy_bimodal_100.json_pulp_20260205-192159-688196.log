@@ -2,7 +2,7 @@ Welcome to the CBC MILP Solver
 Version: 2.10.3 
 Build Date: Dec 15 2019 
 
-command line - /home/gcarvalho/Documentos/cases-tecnicos/parking-problem/.venv/lib/python3.12/site-packages/pulp/apis/../solverdir/cbc/linux/i64/cbc /tmp/0255075139a44ce688e3539c97a8ecc4-pulp.mps -sec 3600.0 -timeMode elapsed -branch -printingOptions all -solution /tmp/0255075139a44ce688e3539c97a8ecc4-pulp.sol (default strategy 1)
+command line - .venv/lib/python3.12/site-packages/pulp/apis/../solverdir/cbc/linux/i64/cbc /tmp/0255075139a44ce688e3539c97a8ecc4-pulp.mps -sec 3600.0 -timeMode elapsed -branch -printingOptions all -solution /tmp/0255075139a44ce688e3539c97a8ecc4-pulp.sol (default strategy 1)
 At line 2 NAME          MODEL
 At line 3 ROWS
 At line 7 COLUMNS
