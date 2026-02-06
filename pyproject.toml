@@ -1,0 +1,18 @@
+[project]
+name = "parking-problem"
+version = "0.1.0"
+description = "Parking Problem (2-partition) solver with OR-Tools"
+requires-python = ">=3.10"
+dependencies = [
+  "ortools>=9.10",
+  "pulp>=2.8",
+  "pyomo>=6.7",
+  "highspy>=1.7",
+  "pytest>=8.2",
+  "matplotlib>=3.8",
+]
+
+[tool.uv]
+
+[tool.pytest.ini_options]
+addopts = "-s -vv"

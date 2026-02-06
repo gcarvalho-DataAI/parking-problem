@@ -1,0 +1,872 @@
+
+
+Starting CP-SAT solver v9.15.6755
+Starting CP-SAT solver v9.15.6755
+Parameters: random_seed: 0 max_time_in_seconds: 3600 log_search_progress: true
+Parameters: random_seed: 0 max_time_in_seconds: 3600 log_search_progress: true
+Setting number of workers to 32
+Setting number of workers to 32
+Setting number of shared tree workers to 8
+Setting number of shared tree workers to 8
+
+
+Initial optimization model '': (model_fingerprint: 0x917640b1c1db9258)
+#Variables: 18 (#ints: 1 in objective) (16 primary variables)
+  - 15 Booleans in [0,1]
+  - 3 in [0,386]
+#kLinear2: 2
+#kLinearN: 2 (#terms: 32)
+Initial optimization model '': (model_fingerprint: 0x917640b1c1db9258)
+#Variables: 18 (#ints: 1 in objective) (16 primary variables)
+  - 15 Booleans in [0,1]
+  - 3 in [0,386]
+#kLinear2: 2
+#kLinearN: 2 (#terms: 32)
+
+
+Starting presolve at 0.00s
+Starting presolve at 0.00s
+  3.62e-05s  0.00e+00d  [DetectDominanceRelations] 
+  3.62e-05s  0.00e+00d  [DetectDominanceRelations] 
+  1.49e-04s  0.00e+00d  [PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+  1.49e-04s  0.00e+00d  [PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+  3.64e-06s  0.00e+00d  [ExtractEncodingFromLinear] 
+  3.64e-06s  0.00e+00d  [ExtractEncodingFromLinear] 
+  6.92e-06s  0.00e+00d  [DetectDuplicateColumns] 
+  6.92e-06s  0.00e+00d  [DetectDuplicateColumns] 
+  4.55e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  4.55e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+[Symmetry] Graph for symmetry has 48 nodes and 66 arcs.
+[Symmetry] Graph for symmetry has 48 nodes and 66 arcs.
+[Symmetry] Symmetry computation done. time: 2.2115e-05 dtime: 7.42e-06
+[Symmetry] Symmetry computation done. time: 2.2115e-05 dtime: 7.42e-06
+[SAT presolve] num removable Booleans: 0 / 15
+[SAT presolve] num removable Booleans: 0 / 15
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.0267e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.0267e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.7339e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.7339e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+  6.04e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  6.04e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  2.05e-04s  5.21e-06d  [Probe] #probed=30 #new_bounds=1 
+  2.05e-04s  5.21e-06d  [Probe] #probed=30 #new_bounds=1 
+  1.19e-05s  2.07e-07d  [MaxClique] 
+  1.19e-05s  2.07e-07d  [MaxClique] 
+  2.11e-05s  0.00e+00d  [DetectDominanceRelations] 
+  2.11e-05s  0.00e+00d  [DetectDominanceRelations] 
+  6.70e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+  6.70e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+  1.28e-05s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  1.28e-05s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  2.97e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  2.97e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  2.32e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  2.32e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  5.22e-06s  1.45e-07d  [DetectDominatedLinearConstraints] #relevant_constraints=2 #num_inclusions=1 
+  5.22e-06s  1.45e-07d  [DetectDominatedLinearConstraints] #relevant_constraints=2 #num_inclusions=1 
+  1.03e-06s  0.00e+00d  [DetectDifferentVariables] 
+  1.03e-06s  0.00e+00d  [DetectDifferentVariables] 
+  5.93e-06s  7.80e-08d  [ProcessSetPPC] #relevant_constraints=5 
+  5.93e-06s  7.80e-08d  [ProcessSetPPC] #relevant_constraints=5 
+  1.57e-05s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=3 
+  1.57e-05s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=3 
+  1.15e-06s  0.00e+00d  [DetectEncodedComplexDomains] 
+  1.15e-06s  0.00e+00d  [DetectEncodedComplexDomains] 
+  6.55e-06s  0.00e+00d  [FindAlmostIdenticalLinearConstraints] 
+  6.55e-06s  0.00e+00d  [FindAlmostIdenticalLinearConstraints] 
+  5.01e-06s  2.40e-06d  [FindBigAtMostOneAndLinearOverlap] 
+  5.01e-06s  2.40e-06d  [FindBigAtMostOneAndLinearOverlap] 
+  1.88e-06s  2.75e-06d  [FindBigVerticalLinearOverlap] 
+  1.88e-06s  2.75e-06d  [FindBigVerticalLinearOverlap] 
+  1.67e-06s  1.60e-07d  [FindBigHorizontalLinearOverlap] #linears=2 
+  1.67e-06s  1.60e-07d  [FindBigHorizontalLinearOverlap] #linears=2 
+  1.12e-06s  0.00e+00d  [MergeClauses] 
+  1.12e-06s  0.00e+00d  [MergeClauses] 
+  1.75e-05s  0.00e+00d  [DetectDominanceRelations] 
+  1.75e-05s  0.00e+00d  [DetectDominanceRelations] 
+  4.68e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  4.68e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  1.46e-05s  0.00e+00d  [DetectDominanceRelations] 
+  1.46e-05s  0.00e+00d  [DetectDominanceRelations] 
+  3.97e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  3.97e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  3.07e-06s  0.00e+00d  [DetectDuplicateColumns] 
+  3.07e-06s  0.00e+00d  [DetectDuplicateColumns] 
+  2.96e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  2.96e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+[Symmetry] Graph for symmetry has 48 nodes and 66 arcs.
+[Symmetry] Graph for symmetry has 48 nodes and 66 arcs.
+[Symmetry] Symmetry computation done. time: 1.2091e-05 dtime: 7.42e-06
+[Symmetry] Symmetry computation done. time: 1.2091e-05 dtime: 7.42e-06
+[SAT presolve] num removable Booleans: 0 / 15
+[SAT presolve] num removable Booleans: 0 / 15
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] num trivial clauses: 0
+[SAT presolve] [0s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [0s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [1.7154e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [1.7154e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.3592e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+[SAT presolve] [2.3592e-05s] clauses:3 literals:6 vars:6 one_side_vars:6 simple_definition:0 singleton_clauses:0
+  3.56e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  3.56e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  1.05e-04s  4.84e-06d  [Probe] #probed=30 
+  1.05e-04s  4.84e-06d  [Probe] #probed=30 
+  1.17e-05s  2.07e-07d  [MaxClique] 
+  1.17e-05s  2.07e-07d  [MaxClique] 
+  1.73e-05s  0.00e+00d  [DetectDominanceRelations] 
+  1.73e-05s  0.00e+00d  [DetectDominanceRelations] 
+  4.68e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  4.68e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  1.20e-05s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  1.20e-05s  0.00e+00d  [ProcessAtMostOneAndLinear] 
+  2.76e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  2.76e-06s  0.00e+00d  [DetectDuplicateConstraints] 
+  2.25e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  2.25e-06s  0.00e+00d  [DetectDuplicateConstraintsWithDifferentEnforcements] 
+  4.95e-06s  1.45e-07d  [DetectDominatedLinearConstraints] #relevant_constraints=2 #num_inclusions=1 
+  4.95e-06s  1.45e-07d  [DetectDominatedLinearConstraints] #relevant_constraints=2 #num_inclusions=1 
+  9.72e-07s  0.00e+00d  [DetectDifferentVariables] 
+  9.72e-07s  0.00e+00d  [DetectDifferentVariables] 
+  5.42e-06s  7.80e-08d  [ProcessSetPPC] #relevant_constraints=5 
+  5.42e-06s  7.80e-08d  [ProcessSetPPC] #relevant_constraints=5 
+  1.17e-05s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=3 
+  1.17e-05s  0.00e+00d  [TransformClausesToExactlyOne] #num_amos=3 
+  7.96e-07s  0.00e+00d  [DetectEncodedComplexDomains] 
+  7.96e-07s  0.00e+00d  [DetectEncodedComplexDomains] 
+  7.07e-07s  0.00e+00d  [FindAlmostIdenticalLinearConstraints] 
+  7.07e-07s  0.00e+00d  [FindAlmostIdenticalLinearConstraints] 
+  3.95e-06s  2.40e-06d  [FindBigAtMostOneAndLinearOverlap] 
+  3.95e-06s  2.40e-06d  [FindBigAtMostOneAndLinearOverlap] 
+  1.98e-06s  2.75e-06d  [FindBigVerticalLinearOverlap] 
+  1.98e-06s  2.75e-06d  [FindBigVerticalLinearOverlap] 
+  1.74e-06s  1.60e-07d  [FindBigHorizontalLinearOverlap] #linears=2 
+  1.74e-06s  1.60e-07d  [FindBigHorizontalLinearOverlap] #linears=2 
+  7.61e-07s  0.00e+00d  [MergeClauses] 
+  7.61e-07s  0.00e+00d  [MergeClauses] 
+  1.62e-05s  0.00e+00d  [DetectDominanceRelations] 
+  1.62e-05s  0.00e+00d  [DetectDominanceRelations] 
+  4.40e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  4.40e-05s  0.00e+00d  [PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+  6.13e-07s  0.00e+00d  [MergeNoOverlap] 
+  6.13e-07s  0.00e+00d  [MergeNoOverlap] 
+  5.44e-07s  0.00e+00d  [MergeNoOverlap2D] 
+  5.44e-07s  0.00e+00d  [MergeNoOverlap2D] 
+  2.17e-06s  0.00e+00d  [ExpandObjective] 
+  2.17e-06s  0.00e+00d  [ExpandObjective] 
+
+
+Presolve summary:
+Presolve summary:
+  - 0 affine relations were detected.
+  - 0 affine relations were detected.
+  - rule 'TODO domination: unexploited dominations' was applied 5 times.
+  - rule 'TODO domination: unexploited dominations' was applied 5 times.
+  - rule 'TODO dual: only one blocking constraint?' was applied 150 times.
+  - rule 'TODO dual: only one blocking constraint?' was applied 150 times.
+  - rule 'TODO dual: only one unspecified blocking constraint?' was applied 6 times.
+  - rule 'TODO dual: only one unspecified blocking constraint?' was applied 6 times.
+  - rule 'domination: added implications' was applied 3 times.
+  - rule 'domination: added implications' was applied 3 times.
+  - rule 'linear: variable substitution 1' was applied 2 times.
+  - rule 'linear: variable substitution 1' was applied 2 times.
+  - rule 'presolve: 0 unused variables removed.' was applied 1 time.
+  - rule 'presolve: 0 unused variables removed.' was applied 1 time.
+  - rule 'presolve: iteration' was applied 2 times.
+  - rule 'presolve: iteration' was applied 2 times.
+
+
+Presolved optimization model '': (model_fingerprint: 0x246920afe7c19c36)
+#Variables: 16 (#ints: 1 in objective) (15 primary variables)
+  - 15 Booleans in [0,1]
+  - 1 in [43,386]
+#kBoolAnd: 3 (#enforced: 3) (#literals: 6)
+#kLinearN: 2 (#terms: 32)
+Presolved optimization model '': (model_fingerprint: 0x246920afe7c19c36)
+#Variables: 16 (#ints: 1 in objective) (15 primary variables)
+  - 15 Booleans in [0,1]
+  - 1 in [43,386]
+#kBoolAnd: 3 (#enforced: 3) (#literals: 6)
+#kLinearN: 2 (#terms: 32)
+[Symmetry] Graph for symmetry has 46 nodes and 66 arcs.
+[Symmetry] Graph for symmetry has 46 nodes and 66 arcs.
+[Symmetry] Symmetry computation done. time: 1.1789e-05 dtime: 7.3e-06
+[Symmetry] Symmetry computation done. time: 1.1789e-05 dtime: 7.3e-06
+
+
+Preloading model.
+Preloading model.
+#Bound   0.00s best:inf   next:[43,386]   initial_domain
+#Bound   0.00s best:inf   next:[43,386]   initial_domain
+#Model   0.00s var:16/16 constraints:5/5
+#Model   0.00s var:16/16 constraints:5/5
+
+
+Starting search at 0.00s with 32 workers.
+Starting search at 0.00s with 32 workers.
+23 full problem subsolvers: [default_lp, lb_tree_search, max_lp, no_lp, objective_lb_search, objective_lb_search_no_lp, objective_shaving_max_lp, objective_shaving_no_lp, probing, probing_max_lp, probing_no_lp, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs, shared_tree(8)]
+23 full problem subsolvers: [default_lp, lb_tree_search, max_lp, no_lp, objective_lb_search, objective_lb_search_no_lp, objective_shaving_max_lp, objective_shaving_no_lp, probing, probing_max_lp, probing_no_lp, pseudo_costs, quick_restart, quick_restart_no_lp, reduced_costs, shared_tree(8)]
+9 first solution subsolvers: [fj(3), fj_lin, fs_random, fs_random_no_lp(2), fs_random_quick_restart, fs_random_quick_restart_no_lp]
+9 first solution subsolvers: [fj(3), fj_lin, fs_random, fs_random_no_lp(2), fs_random_quick_restart, fs_random_quick_restart_no_lp]
+13 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, lb_relax_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns, variables_shaving]
+13 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, lb_relax_lns, ls(2), ls_lin, rins/rens, rnd_cst_lns, rnd_var_lns, variables_shaving]
+3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+
+
+#Bound   0.01s best:inf   next:[193,386]  shared_tree
+#Bound   0.01s best:inf   next:[193,386]  shared_tree
+#1       0.01s best:202   next:[193,201]  shared_tree
+#1       0.01s best:202   next:[193,201]  shared_tree
+#2       0.01s best:196   next:[193,195]  shared_tree
+#2       0.01s best:196   next:[193,195]  shared_tree
+#3       0.01s best:195   next:[193,194]  shared_tree
+#3       0.01s best:195   next:[193,194]  shared_tree
+#4       0.01s best:194   next:[193,193]  default_lp
+#4       0.01s best:194   next:[193,193]  default_lp
+#5       0.01s best:193   next:[]         shared_tree
+#5       0.01s best:193   next:[]         shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s default_lp
+#Done    0.01s default_lp
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+#Done    0.01s shared_tree
+
+
+Task timing                                n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+                     'default_lp':         1 [  2.39ms,   2.39ms]   2.39ms   0.00ns   2.39ms         1 [126.11us, 126.11us] 126.11us   0.00ns 126.11us
+               'feasibility_pump':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'fj_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                      'fs_random':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+        'fs_random_quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+  'fs_random_quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_arc_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_cst_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_dec_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_var_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                   'lb_relax_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                 'lb_tree_search':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'ls_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                          'no_lp':         1 [640.64us, 640.64us] 640.64us   0.00ns 640.64us         1 [ 42.00ns,  42.00ns]  42.00ns   0.00ns  42.00ns
+            'objective_lb_search':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+      'objective_lb_search_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+       'objective_shaving_max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+        'objective_shaving_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                        'probing':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                 'probing_max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'probing_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                   'pseudo_costs':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+            'quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'reduced_costs':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                      'rins/rens':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'rnd_cst_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'rnd_var_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'shared_tree':         1 [  2.39ms,   2.39ms]   2.39ms   0.00ns   2.39ms         1 [143.82us, 143.82us] 143.82us   0.00ns 143.82us
+                    'shared_tree':         1 [  2.94ms,   2.94ms]   2.94ms   0.00ns   2.94ms         1 [ 31.02us,  31.02us]  31.02us   0.00ns  31.02us
+                    'shared_tree':         1 [  3.04ms,   3.04ms]   3.04ms   0.00ns   3.04ms         1 [ 14.97us,  14.97us]  14.97us   0.00ns  14.97us
+                    'shared_tree':         1 [  3.47ms,   3.47ms]   3.47ms   0.00ns   3.47ms         2 [ 30.00ns,  10.63us]   5.33us   5.30us  10.66us
+                    'shared_tree':         1 [  3.51ms,   3.51ms]   3.51ms   0.00ns   3.51ms         2 [  4.43us,  10.19us]   7.31us   2.88us  14.62us
+                    'shared_tree':         1 [  3.69ms,   3.69ms]   3.69ms   0.00ns   3.69ms         2 [ 10.63us,  21.28us]  15.96us   5.32us  31.92us
+                    'shared_tree':         1 [  3.75ms,   3.75ms]   3.75ms   0.00ns   3.75ms         1 [ 10.19us,  10.19us]  10.19us   0.00ns  10.19us
+                    'shared_tree':         1 [  3.79ms,   3.79ms]   3.79ms   0.00ns   3.79ms         2 [  5.10us,  10.63us]   7.87us   2.77us  15.73us
+              'variables_shaving':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+
+Task timing                                n [     min,      max]      avg      dev     time         n [     min,      max]      avg      dev    dtime
+                     'default_lp':         1 [  2.39ms,   2.39ms]   2.39ms   0.00ns   2.39ms         1 [126.11us, 126.11us] 126.11us   0.00ns 126.11us
+               'feasibility_pump':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'fj':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'fj_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                      'fs_random':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                'fs_random_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+        'fs_random_quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+  'fs_random_quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_arc_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_cst_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_dec_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'graph_var_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                   'lb_relax_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                 'lb_tree_search':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                             'ls':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'ls_lin':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                         'max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                          'no_lp':         1 [640.64us, 640.64us] 640.64us   0.00ns 640.64us         1 [ 42.00ns,  42.00ns]  42.00ns   0.00ns  42.00ns
+            'objective_lb_search':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+      'objective_lb_search_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+       'objective_shaving_max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+        'objective_shaving_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                        'probing':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                 'probing_max_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'probing_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                   'pseudo_costs':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'quick_restart':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+            'quick_restart_no_lp':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                  'reduced_costs':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                      'rins/rens':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'rnd_cst_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'rnd_var_lns':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+                    'shared_tree':         1 [  2.39ms,   2.39ms]   2.39ms   0.00ns   2.39ms         1 [143.82us, 143.82us] 143.82us   0.00ns 143.82us
+                    'shared_tree':         1 [  2.94ms,   2.94ms]   2.94ms   0.00ns   2.94ms         1 [ 31.02us,  31.02us]  31.02us   0.00ns  31.02us
+                    'shared_tree':         1 [  3.04ms,   3.04ms]   3.04ms   0.00ns   3.04ms         1 [ 14.97us,  14.97us]  14.97us   0.00ns  14.97us
+                    'shared_tree':         1 [  3.47ms,   3.47ms]   3.47ms   0.00ns   3.47ms         2 [ 30.00ns,  10.63us]   5.33us   5.30us  10.66us
+                    'shared_tree':         1 [  3.51ms,   3.51ms]   3.51ms   0.00ns   3.51ms         2 [  4.43us,  10.19us]   7.31us   2.88us  14.62us
+                    'shared_tree':         1 [  3.69ms,   3.69ms]   3.69ms   0.00ns   3.69ms         2 [ 10.63us,  21.28us]  15.96us   5.32us  31.92us
+                    'shared_tree':         1 [  3.75ms,   3.75ms]   3.75ms   0.00ns   3.75ms         1 [ 10.19us,  10.19us]  10.19us   0.00ns  10.19us
+                    'shared_tree':         1 [  3.79ms,   3.79ms]   3.79ms   0.00ns   3.79ms         2 [  5.10us,  10.63us]   7.87us   2.77us  15.73us
+              'variables_shaving':         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns         0 [  0.00ns,   0.00ns]   0.00ns   0.00ns   0.00ns
+
+Search stats                        Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+                     'default_lp':     17         16       142         0               82        110         108            347
+                      'fs_random':      0          0         0         0                0          0           0              0
+                'fs_random_no_lp':      0          0         0         0                0          0           0              0
+                'fs_random_no_lp':      0          0         0         0                0          0           0              0
+        'fs_random_quick_restart':      0          0         0         0                0          0           0              0
+  'fs_random_quick_restart_no_lp':      0          0         0         0                0          0           0              0
+                 'lb_tree_search':      0          0         0         0                0          0           0              0
+                         'max_lp':      0          0         0         0                0          0           0              0
+                          'no_lp':     15          0         0         0                0          0           0              0
+            'objective_lb_search':      0          0         0         0                0          0           0              0
+      'objective_lb_search_no_lp':      0          0         0         0                0          0           0              0
+                        'probing':      0          0         0         0                0          0           0              0
+                 'probing_max_lp':      0          0         0         0                0          0           0              0
+                  'probing_no_lp':      0          0         0         0                0          0           0              0
+                   'pseudo_costs':      0          0         0         0                0          0           0              0
+                  'quick_restart':      0          0         0         0                0          0           0              0
+            'quick_restart_no_lp':      0          0         0         0                0          0           0              0
+                  'reduced_costs':      0          0         0         0                0          0           0              0
+                    'shared_tree':     15          0        30         0               30         30           6             42
+                    'shared_tree':     16          0        30         0               30         30           7             44
+                    'shared_tree':     16          0        34         0               31         31           7             50
+                    'shared_tree':     16          0        34         0               31         31           7             50
+                    'shared_tree':     17          0        31         0               31         31           9             46
+                    'shared_tree':     17          0        80         0               56         62           8             99
+                    'shared_tree':     17          0        80         0               56         62           8             99
+                    'shared_tree':     18          0       213         0              132        156          27            270
+
+Search stats                        Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+                     'default_lp':     17         16       142         0               82        110         108            347
+                      'fs_random':      0          0         0         0                0          0           0              0
+                'fs_random_no_lp':      0          0         0         0                0          0           0              0
+                'fs_random_no_lp':      0          0         0         0                0          0           0              0
+        'fs_random_quick_restart':      0          0         0         0                0          0           0              0
+  'fs_random_quick_restart_no_lp':      0          0         0         0                0          0           0              0
+                 'lb_tree_search':      0          0         0         0                0          0           0              0
+                         'max_lp':      0          0         0         0                0          0           0              0
+                          'no_lp':     15          0         0         0                0          0           0              0
+            'objective_lb_search':      0          0         0         0                0          0           0              0
+      'objective_lb_search_no_lp':      0          0         0         0                0          0           0              0
+                        'probing':      0          0         0         0                0          0           0              0
+                 'probing_max_lp':      0          0         0         0                0          0           0              0
+                  'probing_no_lp':      0          0         0         0                0          0           0              0
+                   'pseudo_costs':      0          0         0         0                0          0           0              0
+                  'quick_restart':      0          0         0         0                0          0           0              0
+            'quick_restart_no_lp':      0          0         0         0                0          0           0              0
+                  'reduced_costs':      0          0         0         0                0          0           0              0
+                    'shared_tree':     15          0        30         0               30         30           6             42
+                    'shared_tree':     16          0        30         0               30         30           7             44
+                    'shared_tree':     16          0        34         0               31         31           7             50
+                    'shared_tree':     16          0        34         0               31         31           7             50
+                    'shared_tree':     17          0        31         0               31         31           9             46
+                    'shared_tree':     17          0        80         0               56         62           8             99
+                    'shared_tree':     17          0        80         0               56         62           8             99
+                    'shared_tree':     18          0       213         0              132        156          27            270
+
+SAT formula                         Fixed  Equiv  Total  VarLeft  BinaryClauses  PermanentClauses  TemporaryClauses
+                     'default_lp':      2      0     17       15              6                 1                 4
+                      'fs_random':      0      0      0        0              0                 0                 0
+                'fs_random_no_lp':      0      0      0        0              0                 0                 0
+                'fs_random_no_lp':      0      0      0        0              0                 0                 0
+        'fs_random_quick_restart':      0      0      0        0              0                 0                 0
+  'fs_random_quick_restart_no_lp':      0      0      0        0              0                 0                 0
+                 'lb_tree_search':      0      0      0        0              0                 0                 0
+                         'max_lp':      0      0      0        0              0                 0                 0
+                          'no_lp':      0      0     15       15              6                 0                 0
+            'objective_lb_search':      0      0      0        0              0                 0                 0
+      'objective_lb_search_no_lp':      0      0      0        0              0                 0                 0
+                        'probing':      0      0      0        0              0                 0                 0
+                 'probing_max_lp':      0      0      0        0              0                 0                 0
+                  'probing_no_lp':      0      0      0        0              0                 0                 0
+                   'pseudo_costs':      0      0      0        0              0                 0                 0
+                  'quick_restart':      0      0      0        0              0                 0                 0
+            'quick_restart_no_lp':      0      0      0        0              0                 0                 0
+                  'reduced_costs':      0      0      0        0              0                 0                 0
+                    'shared_tree':      0      0     15       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      3      0     18       15              6                 0                 0
+
+SAT formula                         Fixed  Equiv  Total  VarLeft  BinaryClauses  PermanentClauses  TemporaryClauses
+                     'default_lp':      2      0     17       15              6                 1                 4
+                      'fs_random':      0      0      0        0              0                 0                 0
+                'fs_random_no_lp':      0      0      0        0              0                 0                 0
+                'fs_random_no_lp':      0      0      0        0              0                 0                 0
+        'fs_random_quick_restart':      0      0      0        0              0                 0                 0
+  'fs_random_quick_restart_no_lp':      0      0      0        0              0                 0                 0
+                 'lb_tree_search':      0      0      0        0              0                 0                 0
+                         'max_lp':      0      0      0        0              0                 0                 0
+                          'no_lp':      0      0     15       15              6                 0                 0
+            'objective_lb_search':      0      0      0        0              0                 0                 0
+      'objective_lb_search_no_lp':      0      0      0        0              0                 0                 0
+                        'probing':      0      0      0        0              0                 0                 0
+                 'probing_max_lp':      0      0      0        0              0                 0                 0
+                  'probing_no_lp':      0      0      0        0              0                 0                 0
+                   'pseudo_costs':      0      0      0        0              0                 0                 0
+                  'quick_restart':      0      0      0        0              0                 0                 0
+            'quick_restart_no_lp':      0      0      0        0              0                 0                 0
+                  'reduced_costs':      0      0      0        0              0                 0                 0
+                    'shared_tree':      0      0     15       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      1      0     16       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      2      0     17       15              6                 0                 0
+                    'shared_tree':      3      0     18       15              6                 0                 0
+
+SAT stats                           ClassicMinim  LitRemoved  LitRemovedBinary  LitLearned  LitForgotten  Subsumed
+                     'default_lp':            11          16                21         113             0        11
+                      'fs_random':             0           0                 0           0             0         0
+                'fs_random_no_lp':             0           0                 0           0             0         0
+                'fs_random_no_lp':             0           0                 0           0             0         0
+        'fs_random_quick_restart':             0           0                 0           0             0         0
+  'fs_random_quick_restart_no_lp':             0           0                 0           0             0         0
+                 'lb_tree_search':             0           0                 0           0             0         0
+                         'max_lp':             0           0                 0           0             0         0
+                          'no_lp':             0           0                 0           0             0         0
+            'objective_lb_search':             0           0                 0           0             0         0
+      'objective_lb_search_no_lp':             0           0                 0           0             0         0
+                        'probing':             0           0                 0           0             0         0
+                 'probing_max_lp':             0           0                 0           0             0         0
+                  'probing_no_lp':             0           0                 0           0             0         0
+                   'pseudo_costs':             0           0                 0           0             0         0
+                  'quick_restart':             0           0                 0           0             0         0
+            'quick_restart_no_lp':             0           0                 0           0             0         0
+                  'reduced_costs':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+
+SAT stats                           ClassicMinim  LitRemoved  LitRemovedBinary  LitLearned  LitForgotten  Subsumed
+                     'default_lp':            11          16                21         113             0        11
+                      'fs_random':             0           0                 0           0             0         0
+                'fs_random_no_lp':             0           0                 0           0             0         0
+                'fs_random_no_lp':             0           0                 0           0             0         0
+        'fs_random_quick_restart':             0           0                 0           0             0         0
+  'fs_random_quick_restart_no_lp':             0           0                 0           0             0         0
+                 'lb_tree_search':             0           0                 0           0             0         0
+                         'max_lp':             0           0                 0           0             0         0
+                          'no_lp':             0           0                 0           0             0         0
+            'objective_lb_search':             0           0                 0           0             0         0
+      'objective_lb_search_no_lp':             0           0                 0           0             0         0
+                        'probing':             0           0                 0           0             0         0
+                 'probing_max_lp':             0           0                 0           0             0         0
+                  'probing_no_lp':             0           0                 0           0             0         0
+                   'pseudo_costs':             0           0                 0           0             0         0
+                  'quick_restart':             0           0                 0           0             0         0
+            'quick_restart_no_lp':             0           0                 0           0             0         0
+                  'reduced_costs':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+                    'shared_tree':             0           0                 0           0             0         0
+
+Vivification                        Clauses  Decisions  LitTrue  Subsumed  LitRemoved  DecisionReused  Conflicts
+                     'default_lp':        0          0        0         0           0               0          0
+                      'fs_random':        0          0        0         0           0               0          0
+                'fs_random_no_lp':        0          0        0         0           0               0          0
+                'fs_random_no_lp':        0          0        0         0           0               0          0
+        'fs_random_quick_restart':        0          0        0         0           0               0          0
+  'fs_random_quick_restart_no_lp':        0          0        0         0           0               0          0
+                 'lb_tree_search':        0          0        0         0           0               0          0
+                         'max_lp':        0          0        0         0           0               0          0
+                          'no_lp':        0          0        0         0           0               0          0
+            'objective_lb_search':        0          0        0         0           0               0          0
+      'objective_lb_search_no_lp':        0          0        0         0           0               0          0
+                        'probing':        0          0        0         0           0               0          0
+                 'probing_max_lp':        0          0        0         0           0               0          0
+                  'probing_no_lp':        0          0        0         0           0               0          0
+                   'pseudo_costs':        0          0        0         0           0               0          0
+                  'quick_restart':        0          0        0         0           0               0          0
+            'quick_restart_no_lp':        0          0        0         0           0               0          0
+                  'reduced_costs':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+
+Vivification                        Clauses  Decisions  LitTrue  Subsumed  LitRemoved  DecisionReused  Conflicts
+                     'default_lp':        0          0        0         0           0               0          0
+                      'fs_random':        0          0        0         0           0               0          0
+                'fs_random_no_lp':        0          0        0         0           0               0          0
+                'fs_random_no_lp':        0          0        0         0           0               0          0
+        'fs_random_quick_restart':        0          0        0         0           0               0          0
+  'fs_random_quick_restart_no_lp':        0          0        0         0           0               0          0
+                 'lb_tree_search':        0          0        0         0           0               0          0
+                         'max_lp':        0          0        0         0           0               0          0
+                          'no_lp':        0          0        0         0           0               0          0
+            'objective_lb_search':        0          0        0         0           0               0          0
+      'objective_lb_search_no_lp':        0          0        0         0           0               0          0
+                        'probing':        0          0        0         0           0               0          0
+                 'probing_max_lp':        0          0        0         0           0               0          0
+                  'probing_no_lp':        0          0        0         0           0               0          0
+                   'pseudo_costs':        0          0        0         0           0               0          0
+                  'quick_restart':        0          0        0         0           0               0          0
+            'quick_restart_no_lp':        0          0        0         0           0               0          0
+                  'reduced_costs':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+                    'shared_tree':        0          0        0         0           0               0          0
+
+Clause deletion                     at_true  l_and_not(l)  to_binary  sub_conflict  sub_extra  sub_decisions  sub_eager  sub_vivify  sub_probing  sub_inpro  blocked  eliminated  forgotten  promoted  conflicts
+                     'default_lp':        0             0          0            11          0              0          0           0            0          0        0           0          0        29         16
+                      'fs_random':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                'fs_random_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                'fs_random_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+        'fs_random_quick_restart':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+  'fs_random_quick_restart_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                 'lb_tree_search':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                         'max_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                          'no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+            'objective_lb_search':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+      'objective_lb_search_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                        'probing':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                 'probing_max_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'probing_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                   'pseudo_costs':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'quick_restart':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+            'quick_restart_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'reduced_costs':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+
+Clause deletion                     at_true  l_and_not(l)  to_binary  sub_conflict  sub_extra  sub_decisions  sub_eager  sub_vivify  sub_probing  sub_inpro  blocked  eliminated  forgotten  promoted  conflicts
+                     'default_lp':        0             0          0            11          0              0          0           0            0          0        0           0          0        29         16
+                      'fs_random':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                'fs_random_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                'fs_random_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+        'fs_random_quick_restart':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+  'fs_random_quick_restart_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                 'lb_tree_search':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                         'max_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                          'no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+            'objective_lb_search':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+      'objective_lb_search_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                        'probing':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                 'probing_max_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'probing_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                   'pseudo_costs':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'quick_restart':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+            'quick_restart_no_lp':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                  'reduced_costs':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+                    'shared_tree':        0             0          0             0          0              0          0           0            0          0        0           0          0         0          0
+
+Lp stats          Component  Iterations  AddedCuts  OPTIMAL  DUAL_F.  DUAL_U.
+   'default_lp':          1          71         11       25        0        0
+  'shared_tree':          1          13          0        2        0        0
+  'shared_tree':          1          14          0        2        0        0
+  'shared_tree':          1          20          1        4        0        0
+  'shared_tree':          1          21          1        4        0        0
+  'shared_tree':          1          21          3        4        0        0
+  'shared_tree':          1          34          4        7        0        0
+  'shared_tree':          1          34          5        7        0        0
+  'shared_tree':          1          93         21       27        0        0
+
+Lp stats          Component  Iterations  AddedCuts  OPTIMAL  DUAL_F.  DUAL_U.
+   'default_lp':          1          71         11       25        0        0
+  'shared_tree':          1          13          0        2        0        0
+  'shared_tree':          1          14          0        2        0        0
+  'shared_tree':          1          20          1        4        0        0
+  'shared_tree':          1          21          1        4        0        0
+  'shared_tree':          1          21          3        4        0        0
+  'shared_tree':          1          34          4        7        0        0
+  'shared_tree':          1          34          5        7        0        0
+  'shared_tree':          1          93         21       27        0        0
+
+Lp dimension      Final dimension of first component
+   'default_lp':    12 rows, 16 columns, 132 entries
+  'shared_tree':      1 rows, 16 columns, 16 entries
+  'shared_tree':      1 rows, 16 columns, 16 entries
+  'shared_tree':    18 rows, 16 columns, 199 entries
+  'shared_tree':      3 rows, 16 columns, 34 entries
+  'shared_tree':      3 rows, 16 columns, 34 entries
+  'shared_tree':      5 rows, 16 columns, 38 entries
+  'shared_tree':      5 rows, 16 columns, 67 entries
+  'shared_tree':      6 rows, 16 columns, 76 entries
+
+Lp dimension      Final dimension of first component
+   'default_lp':    12 rows, 16 columns, 132 entries
+  'shared_tree':      1 rows, 16 columns, 16 entries
+  'shared_tree':      1 rows, 16 columns, 16 entries
+  'shared_tree':    18 rows, 16 columns, 199 entries
+  'shared_tree':      3 rows, 16 columns, 34 entries
+  'shared_tree':      3 rows, 16 columns, 34 entries
+  'shared_tree':      5 rows, 16 columns, 38 entries
+  'shared_tree':      5 rows, 16 columns, 67 entries
+  'shared_tree':      6 rows, 16 columns, 76 entries
+
+Lp debug          CutPropag  CutEqPropag  Adjust  Overflow  Bad  BadScaling
+   'default_lp':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0           10       0         0    1           0
+
+Lp debug          CutPropag  CutEqPropag  Adjust  Overflow  Bad  BadScaling
+   'default_lp':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0            0       0         0    0           0
+  'shared_tree':          0           10       0         0    1           0
+
+Lp pool           Constraints  Updates  Simplif  Merged  Shortened  Split  Strengthened  Cuts/Call
+   'default_lp':           13        4        9       0          6      0             0      11/15
+  'shared_tree':            2        0        0       0          0      0             0        0/0
+  'shared_tree':            2        0        0       0          0      0             0        0/0
+  'shared_tree':           23       11        8       0          8      2             1      21/42
+  'shared_tree':            3        0        0       0          0      0             0        1/1
+  'shared_tree':            3        0        0       0          0      0             0        1/1
+  'shared_tree':            5        0        0       0          0      0             0        3/3
+  'shared_tree':            6        2        1       0          0      0             0        4/7
+  'shared_tree':            7        2        1       0          0      0             0        5/7
+
+Lp pool           Constraints  Updates  Simplif  Merged  Shortened  Split  Strengthened  Cuts/Call
+   'default_lp':           13        4        9       0          6      0             0      11/15
+  'shared_tree':            2        0        0       0          0      0             0        0/0
+  'shared_tree':            2        0        0       0          0      0             0        0/0
+  'shared_tree':           23       11        8       0          8      2             1      21/42
+  'shared_tree':            3        0        0       0          0      0             0        1/1
+  'shared_tree':            3        0        0       0          0      0             0        1/1
+  'shared_tree':            5        0        0       0          0      0             0        3/3
+  'shared_tree':            6        2        1       0          0      0             0        4/7
+  'shared_tree':            7        2        1       0          0      0             0        5/7
+
+Lp Cut       shared_tree  shared_tree  shared_tree  default_lp  shared_tree  shared_tree  shared_tree
+     CG_FF:            -            2            -           -            -            -            -
+      CG_R:            -            1            -           -            -            -            -
+        IB:            1            -            1           1            3            1            1
+  MIR_1_FF:            -            6            2           4            -            2            -
+   MIR_1_K:            -            2            -           -            -            -            -
+  MIR_1_KL:            -            3            -           2            -            -            -
+   MIR_1_R:            -            5            1           4            -            2            -
+  MIR_2_FF:            -            1            -           -            -            -            -
+   MIR_2_R:            -            1            -           -            -            -            -
+
+Lp Cut       shared_tree  shared_tree  shared_tree  default_lp  shared_tree  shared_tree  shared_tree
+     CG_FF:            -            2            -           -            -            -            -
+      CG_R:            -            1            -           -            -            -            -
+        IB:            1            -            1           1            3            1            1
+  MIR_1_FF:            -            6            2           4            -            2            -
+   MIR_1_K:            -            2            -           -            -            -            -
+  MIR_1_KL:            -            3            -           2            -            -            -
+   MIR_1_R:            -            5            1           4            -            2            -
+  MIR_2_FF:            -            1            -           -            -            -            -
+   MIR_2_R:            -            1            -           -            -            -            -
+
+LNS stats           Improv/Calls  Closed  Difficulty  TimeLimit
+  'graph_arc_lns':           0/0      0%    5.00e-01       0.10
+  'graph_cst_lns':           0/0      0%    5.00e-01       0.10
+  'graph_dec_lns':           0/0      0%    5.00e-01       0.10
+  'graph_var_lns':           0/0      0%    5.00e-01       0.10
+   'lb_relax_lns':           0/0      0%    5.00e-01       0.50
+      'rins/rens':           0/0      0%    5.00e-01       0.10
+    'rnd_cst_lns':           0/0      0%    5.00e-01       0.10
+    'rnd_var_lns':           0/0      0%    5.00e-01       0.10
+
+LNS stats           Improv/Calls  Closed  Difficulty  TimeLimit
+  'graph_arc_lns':           0/0      0%    5.00e-01       0.10
+  'graph_cst_lns':           0/0      0%    5.00e-01       0.10
+  'graph_dec_lns':           0/0      0%    5.00e-01       0.10
+  'graph_var_lns':           0/0      0%    5.00e-01       0.10
+   'lb_relax_lns':           0/0      0%    5.00e-01       0.50
+      'rins/rens':           0/0      0%    5.00e-01       0.10
+    'rnd_cst_lns':           0/0      0%    5.00e-01       0.10
+    'rnd_var_lns':           0/0      0%    5.00e-01       0.10
+
+Solutions (5)     Num   Rank
+   'default_lp':    2  [3,4]
+  'shared_tree':    8  [0,5]
+
+Solutions (5)     Num   Rank
+   'default_lp':    2  [3,4]
+  'shared_tree':    8  [0,5]
+
+Objective bounds     Num
+  'initial_domain':    1
+     'shared_tree':    1
+
+Objective bounds     Num
+  'initial_domain':    1
+     'shared_tree':    1
+
+Solution repositories    Added  Queried  Synchro
+    'alternative_path':      1        0        1
+      'best_solutions':     10        0        6
+   'fj solution hints':      0        0        0
+        'lp solutions':      0        0        0
+                'pump':      0        0
+
+Solution repositories    Added  Queried  Synchro
+    'alternative_path':      1        0        1
+      'best_solutions':     10        0        6
+   'fj solution hints':      0        0        0
+        'lp solutions':      0        0        0
+                'pump':      0        0
+
+Improving bounds shared    Num  Sym
+            'default_lp':    1    0
+           'shared_tree':    4    0
+
+Improving bounds shared    Num  Sym
+            'default_lp':    1    0
+           'shared_tree':    4    0
+
+Clauses shared    #Exported  #Imported  #BinaryRead  #BinaryTotal
+   'default_lp':          0          0            0             0
+        'no_lp':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+
+Clauses shared    #Exported  #Imported  #BinaryRead  #BinaryTotal
+   'default_lp':          0          0            0             0
+        'no_lp':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+  'shared_tree':          0          0            0             0
+
+LRAT_status: NA
+LRAT_status: NA
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 193
+best_bound: 193
+integers: 16
+booleans: 16
+conflicts: 0
+branches: 34
+propagations: 7
+integer_propagations: 50
+restarts: 0
+lp_iterations: 21
+walltime: 0.00953759
+usertime: 0.00953762
+deterministic_time: 0.000420621
+gap_integral: 0.00209102
+solution_fingerprint: 0xd71e2942c700f249
+
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 193
+best_bound: 193
+integers: 16
+booleans: 16
+conflicts: 0
+branches: 34
+propagations: 7
+integer_propagations: 50
+restarts: 0
+lp_iterations: 21
+walltime: 0.00953759
+usertime: 0.00953762
+deterministic_time: 0.000420621
+gap_integral: 0.00209102
+solution_fingerprint: 0xd71e2942c700f249
+
+[ortools_stats]
+CpSolverResponse summary:
+status: OPTIMAL
+objective: 193
+best_bound: 193
+integers: 16
+booleans: 16
+conflicts: 0
+branches: 34
+propagations: 7
+integer_propagations: 50
+restarts: 0
+lp_iterations: 21
+walltime: 0.00953759
+usertime: 0.00953762
+deterministic_time: 0.000420621
+gap_integral: 0.00209102
+solution_fingerprint: 0xd71e2942c700f249

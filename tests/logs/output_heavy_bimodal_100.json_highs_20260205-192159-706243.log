@@ -1,0 +1,17 @@
+[run] instance=heavy_bimodal_100.json solver=highs
+[done] instance=heavy_bimodal_100.json solver=highs elapsed=0.242s
+[result] status=ok max_side=254.05
+[result] sum_a=254.0 sum_b=254.05
+[result] side_a=[2, 3, 4, 10, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 44, 63, 64, 65, 66, 67, 68, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 81, 83, 87, 88, 95, 96, 97, 98, 99]
+[result] side_b=[0, 1, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 28, 29, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 69, 80, 82, 84, 85, 86, 89, 90, 91, 92, 93, 94]
+[convergence] time_sec,objective,status
+[convergence] 0.241566,254.05,ok
+[solver_log_begin]
+Running HiGHS 1.13.0 (git hash: 1bce6d5): Copyright (c) 2026 under MIT licence terms
+[pyomo_stats]
+
+- Status: ok
+  Termination condition: optimal
+  Termination message: TerminationCondition.convergenceCriteriaSatisfied
+
+[solver_log_end]

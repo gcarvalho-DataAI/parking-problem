@@ -1,0 +1,15 @@
+[run] instance=figure_2_1.json solver=highs
+[done] instance=figure_2_1.json solver=highs elapsed=0.374s
+[result] status=ok max_side=28.59999999999995
+[result] sum_a=28.6 sum_b=28.5
+[convergence] time_sec,objective,status
+[convergence] 0.374233,28.59999999999995,ok
+[solver_log_begin]
+Running HiGHS 1.13.0 (git hash: 1bce6d5): Copyright (c) 2026 under MIT licence terms
+[pyomo_stats]
+
+- Status: ok
+  Termination condition: optimal
+  Termination message: TerminationCondition.convergenceCriteriaSatisfied
+
+[solver_log_end]

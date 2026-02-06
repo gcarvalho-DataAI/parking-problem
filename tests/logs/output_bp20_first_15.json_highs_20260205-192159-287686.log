@@ -1,0 +1,17 @@
+[run] instance=bp20_first_15.json solver=highs
+[done] instance=bp20_first_15.json solver=highs elapsed=0.137s
+[result] status=ok max_side=19.299999999999997
+[result] sum_a=19.3 sum_b=19.3
+[result] side_a=[2, 3, 5, 6, 8, 9, 12, 14]
+[result] side_b=[0, 1, 4, 7, 10, 11, 13]
+[convergence] time_sec,objective,status
+[convergence] 0.137386,19.299999999999997,ok
+[solver_log_begin]
+Running HiGHS 1.13.0 (git hash: 1bce6d5): Copyright (c) 2026 under MIT licence terms
+[pyomo_stats]
+
+- Status: ok
+  Termination condition: optimal
+  Termination message: TerminationCondition.convergenceCriteriaSatisfied
+
+[solver_log_end]

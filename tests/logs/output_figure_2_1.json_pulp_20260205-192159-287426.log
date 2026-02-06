@@ -1,0 +1,101 @@
+[run] instance=figure_2_1.json solver=pulp
+[done] instance=figure_2_1.json solver=pulp elapsed=0.230s
+[result] status=Optimal max_side=28.6
+[result] sum_a=28.5 sum_b=28.6
+[result] side_a=[0, 1, 4, 6, 9, 10, 11, 12]
+[result] side_b=[2, 3, 5, 7, 8, 13, 14]
+[convergence] time_sec,objective,status
+[convergence] 0.230426,28.6,Optimal
+[solver_log_begin]
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - /home/gcarvalho/Documentos/cases-tecnicos/parking-problem/.venv/lib/python3.12/site-packages/pulp/apis/../solverdir/cbc/linux/i64/cbc /tmp/b76cfd72a43044cfad59d2f3aeea1a30-pulp.mps -sec 3600.0 -timeMode elapsed -branch -printingOptions all -solution /tmp/b76cfd72a43044cfad59d2f3aeea1a30-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 7 COLUMNS
+At line 71 RHS
+At line 74 BOUNDS
+At line 90 ENDATA
+Problem MODEL has 2 rows, 16 columns and 32 elements
+Coin0008I MODEL read with 0 errors
+seconds was changed from 1e+100 to 3600
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 28.55 - 0.00 seconds
+Cgl0004I processed model has 2 rows, 15 columns (14 integer (13 of which binary)) and 30 elements
+Cbc0038I Initial state - 1 integers unsatisfied sum - 0.0288462
+Cbc0038I Pass   1: suminf.    0.03333 (1) obj. 28.55 iterations 1
+Cbc0038I Solution found of 28.55
+Cbc0038I Branch and bound needed to clear up 1 general integers
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 2 columns
+Cbc0038I Cleaned solution of 28.7
+Cbc0038I Before mini branch and bound, 12 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 2 columns
+Cbc0038I Mini branch and bound improved solution from 28.7 to 28.7 (0.00 seconds)
+Cbc0038I Round again with cutoff of 28.685
+Cbc0038I Pass   2: suminf.    0.03333 (1) obj. 28.55 iterations 0
+Cbc0038I Solution found of 28.55
+Cbc0038I Branch and bound needed to clear up 1 general integers
+Cbc0038I Mini branch and bound could not fix general integers
+Cbc0038I No solution found this major pass
+Cbc0038I Before mini branch and bound, 12 integers at bound fixed and 0 continuous
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 2 columns
+Cbc0038I Mini branch and bound did not improve solution (0.00 seconds)
+Cbc0038I After 0.00 seconds - Feasibility pump exiting with objective of 28.7 - took 0.00 seconds
+Cbc0012I Integer solution of 28.7 found by feasibility pump after 0 iterations and 0 nodes (0.00 seconds)
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 2 columns
+Cbc0031I 1 added rows had average density of 15
+Cbc0013I At root node, 1 cuts changed objective from 28.55 to 28.55 in 17 passes
+Cbc0014I Cut generator 0 (Probing) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 1 (Gomory) - 18 row cuts average 15.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 2 (Knapsack) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+Cbc0010I After 0 nodes, 1 on tree, 28.7 best solution, best possible 28.55 (0.00 seconds)
+Cbc0012I Integer solution of 28.6 found by DiveCoefficient after 35 iterations and 4 nodes (0.00 seconds)
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 6 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 6 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 6 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 10 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 8 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 7 columns
+Cbc0010I After 1000 nodes, 9 on tree, 28.6 best solution, best possible 28.55 (0.09 seconds)
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 8 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 7 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 10 columns
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 9 columns
+Cbc0010I After 2000 nodes, 6 on tree, 28.6 best solution, best possible 28.55 (0.16 seconds)
+Cbc0038I Full problem 2 rows 15 columns, reduced to 2 rows 7 columns
+Cbc0010I After 3000 nodes, 2 on tree, 28.6 best solution, best possible 28.55 (0.22 seconds)
+Cbc0001I Search completed - best objective 28.6, took 14614 iterations and 14068 nodes (0.23 seconds)
+Cbc0032I Strong branching done 3592 times (4002 iterations), fathomed 403 nodes and fixed 1 variables
+Cbc0041I Maximum depth 12, 1 variables fixed on reduced cost (complete fathoming 965 times, 11034 nodes taking 10690 iterations)
+Cuts at root node changed objective from 28.55 to 28.55
+Probing was tried 17 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 17 times and created 18 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 17 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 17 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 17 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 17 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 1 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                28.60000000
+Enumerated nodes:               14068
+Total iterations:               14614
+Time (CPU seconds):             0.21
+Time (Wallclock seconds):       0.23
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.21   (Wallclock seconds):       0.23
+
+[solver_log_end]
+[convergence] time_sec,objective,status
+[convergence] 0.000000,28.7,FEASIBLE
+[convergence] 0.090000,28.6,FEASIBLE
+[convergence] 0.160000,28.6,FEASIBLE
+[convergence] 0.220000,28.6,FEASIBLE

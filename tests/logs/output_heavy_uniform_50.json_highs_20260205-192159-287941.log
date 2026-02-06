@@ -1,0 +1,17 @@
+[run] instance=heavy_uniform_50.json solver=highs
+[done] instance=heavy_uniform_50.json solver=highs elapsed=43.539s
+[result] status=ok max_side=138.59999999187528
+[result] sum_a=138.5 sum_b=138.6
+[result] side_a=[0, 3, 4, 7, 12, 13, 14, 17, 19, 20, 23, 24, 26, 28, 30, 31, 32, 34, 35, 40, 41, 48, 49]
+[result] side_b=[1, 2, 5, 6, 8, 9, 10, 11, 15, 16, 18, 21, 22, 25, 27, 29, 33, 36, 37, 38, 39, 42, 43, 44, 45, 46, 47]
+[convergence] time_sec,objective,status
+[convergence] 43.539417,138.59999999187528,ok
+[solver_log_begin]
+Running HiGHS 1.13.0 (git hash: 1bce6d5): Copyright (c) 2026 under MIT licence terms
+[pyomo_stats]
+
+- Status: ok
+  Termination condition: optimal
+  Termination message: TerminationCondition.convergenceCriteriaSatisfied
+
+[solver_log_end]

@@ -1,0 +1,10 @@
+{
+  "note": "Instances were split into separate files under datasets/{disponibilizada,adaptada,gerada}.",
+  "paths": [
+    "datasets/disponibilizada/figure_2_1.json",
+    "datasets/adaptada/bp20_first_15.json",
+    "datasets/gerada/heavy_uniform_50.json",
+    "datasets/gerada/heavy_bimodal_100.json",
+    "datasets/gerada/heavy_narrow_200.json"
+  ]
+}
