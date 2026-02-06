@@ -160,12 +160,11 @@ def main() -> None:
         if m:
             alt = esc_tex_text(m.group(1).strip())
             path = esc_tex_text(m.group(2).strip())
-            out.append(r"\begin{figure}[ht]")
-            out.append(r"\centering")
+            out.append(r"\begin{center}")
             out.append(rf"\includegraphics[width=0.9\textwidth]{{{path}}}")
             if alt:
-                out.append(rf"\caption{{{alt}}}")
-            out.append(r"\end{figure}")
+                out.append(rf"\par\small\textit{{{alt}}}")
+            out.append(r"\end{center}")
             i += 1
             continue
 

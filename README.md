@@ -88,4 +88,5 @@ All dependencies are managed via **UV**:
 ---
 
 **Author:** Gabriel Carvalho Domingos da Conceição
-**LinkedIn:** https://www.linkedin.com/in/gabriel-carvalho-conceicao/
+**LinkedIn:** https://www.linkedin.com/in/gabriel-carvalho-conceicao/  
+**Repository:** https://github.com/gcarvalho-DataAI/parking-problem

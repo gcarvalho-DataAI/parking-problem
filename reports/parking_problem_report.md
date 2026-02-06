@@ -2,7 +2,8 @@
 **A Partition-Based Optimization Approach with Solver Performance Analysis**
 
 **Author:** Gabriel Carvalho Domingos da Conceição  
-**LinkedIn:** [https://www.linkedin.com/in/gabriel-carvalho-conceicao/](https://www.linkedin.com/in/gabriel-carvalho-conceicao/)
+**LinkedIn:** [https://www.linkedin.com/in/gabriel-carvalho-conceicao/](https://www.linkedin.com/in/gabriel-carvalho-conceicao/)  
+**Repository:** [https://github.com/gcarvalho-DataAI/parking-problem](https://github.com/gcarvalho-DataAI/parking-problem)
 
 ---
 
