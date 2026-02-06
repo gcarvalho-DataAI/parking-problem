@@ -26,7 +26,7 @@ def main() -> None:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Plot time by solver (average over instances)
+    # Plot time by solver (average over instances) + boxplot distribution
     times_by_solver = defaultdict(list)
     for r in rows:
         if r["time_sec"]:
@@ -43,7 +43,16 @@ def main() -> None:
     plt.savefig(OUT_DIR / "avg_time_by_solver.png", dpi=150)
     plt.close()
 
-    # Plot convergence points by solver
+    plt.figure(figsize=(6, 4))
+    data = [times_by_solver[s] for s in solvers]
+    plt.boxplot(data, labels=solvers, showfliers=True)
+    plt.ylabel("Time (s)")
+    plt.title("Time Distribution by Solver")
+    plt.tight_layout()
+    plt.savefig(OUT_DIR / "time_boxplot_by_solver.png", dpi=150)
+    plt.close()
+
+    # Plot convergence points by solver (average + boxplot)
     conv_by_solver = defaultdict(list)
     for r in rows:
         if r["conv_points"]:
@@ -58,6 +67,15 @@ def main() -> None:
     plt.title("Average Convergence Points by Solver")
     plt.tight_layout()
     plt.savefig(OUT_DIR / "avg_convergence_by_solver.png", dpi=150)
+    plt.close()
+
+    plt.figure(figsize=(6, 4))
+    data = [conv_by_solver[s] for s in solvers]
+    plt.boxplot(data, labels=solvers, showfliers=True)
+    plt.ylabel("Convergence Points")
+    plt.title("Convergence Distribution by Solver")
+    plt.tight_layout()
+    plt.savefig(OUT_DIR / "convergence_boxplot_by_solver.png", dpi=150)
     plt.close()
 
     # Plot max_side by solver (average)
@@ -107,6 +125,34 @@ def main() -> None:
     plot_grouped("time_sec", "Time by Instance and Solver", "Time (s)", "time_by_instance.png")
     plot_grouped("max_side", "Objective by Instance and Solver", "Max Side", "max_side_by_instance.png")
     plot_grouped("conv_points", "Convergence Points by Instance and Solver", "Convergence Points", "conv_by_instance.png")
+
+    # Scatter: time vs instance size (n), colored by solver
+    instance_sizes = {}
+    for r in rows:
+        if r.get("n_items"):
+            instance_sizes[r["instance"]] = int(r["n_items"])
+
+    if instance_sizes:
+        plt.figure(figsize=(7, 4))
+        for solver in solvers:
+            xs = []
+            ys = []
+            for r in rows:
+                if r["solver"] != solver or not r["time_sec"]:
+                    continue
+                inst = r["instance"]
+                if inst in instance_sizes:
+                    xs.append(instance_sizes[inst])
+                    ys.append(float(r["time_sec"]))
+            if xs:
+                plt.scatter(xs, ys, label=solver, alpha=0.8)
+        plt.xlabel("Instance size (n)")
+        plt.ylabel("Time (s)")
+        plt.title("Time vs Instance Size")
+        plt.legend(fontsize=8)
+        plt.tight_layout()
+        plt.savefig(OUT_DIR / "time_vs_instance_size.png", dpi=150)
+        plt.close()
 
     print(f"Plots written to {OUT_DIR}")
 

@@ -47,9 +47,8 @@ def md_inline_to_tex(line: str) -> str:
         )
 
     def _repl_link(m: re.Match) -> str:
-        text = esc_tex_text(m.group(1))
         url = _esc_url(m.group(2))
-        return r"\href{" + url + r"}{" + text + r"}"
+        return r"\href{" + url + r"}{\url{" + url + r"}}"
 
     line = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", _repl_link, line)
     # Bold **text**
@@ -65,6 +64,8 @@ def md_inline_to_tex(line: str) -> str:
     # Restore code segments
     for idx, code in enumerate(code_map):
         line = line.replace(f"@@CODE{idx}@@", code)
+    # Convert bare <https://...> into clickable URLs
+    line = re.sub(r"<\s*(https?://[^>\s]+)\s*>", r"\\url{\1}", line)
     return line
 
 
@@ -120,22 +121,34 @@ def main() -> None:
     out.append(r"\usepackage[utf8]{inputenc}")
     out.append(r"\usepackage{amsmath,amssymb}")
     out.append(r"\usepackage{graphicx}")
+    out.append(r"\usepackage{url}")
     out.append(r"\usepackage{geometry}")
     out.append(r"\geometry{margin=2.5cm}")
+    out.append(r"\Urlmuskip=0mu plus 1mu")
     out.append(r"")
     out.append(r"% Clickable links without hyperref (no extra dependencies)")
     out.append(
-        r"\def\href#1#2{\pdfstartlink attr{/Border[0 0 0]} user{/Subtype/Link/A<< /S/URI /URI(\pdfescapestring{#1}) >>}#2\pdfendlink}"
+        r"\def\href#1#2{\leavevmode\pdfstartlink attr{/Border[0 0 0]} user{/Subtype/Link/A<< /S/URI /URI(\pdfescapestring{#1}) >>}#2\pdfendlink}"
     )
     out.append(r"\def\url#1{\href{#1}{#1}}")
     out.append("")
     out.append(r"\begin{document}")
+    out.append(r"\input{reports/cover.tex}")
+    out.append(r"\tableofcontents")
+    out.append(r"\clearpage")
 
     i = 0
     in_itemize = False
     in_math_block = False
+    front_matter_skipped = False
     while i < len(lines):
         line = lines[i].rstrip("\n")
+
+        if not front_matter_skipped:
+            if line.strip() == "---":
+                front_matter_skipped = True
+            i += 1
+            continue
 
         if in_math_block:
             out.append(line)
@@ -170,18 +183,23 @@ def main() -> None:
 
         # Headings
         if line.startswith("# "):
-            out.append(r"\section*{" + esc_tex_text(line[2:].strip()) + "}")
+            title = line[2:].strip()
+            title = re.sub(r"^\d+(?:\.\d+)*\.?\s+", "", title)
+            out.append(r"\section*{" + esc_tex_text(title) + "}")
             i += 1
             continue
         if line.startswith("## "):
             title = line[3:].strip()
+            title = re.sub(r"^\d+(?:\.\d+)*\.?\s+", "", title)
             if title.lower() == "references":
                 out.append(r"\clearpage")
             out.append(r"\section{" + esc_tex_text(title) + "}")
             i += 1
             continue
         if line.startswith("### "):
-            out.append(r"\subsection{" + esc_tex_text(line[4:].strip()) + "}")
+            title = line[4:].strip()
+            title = re.sub(r"^\d+(?:\.\d+)*\.?\s+", "", title)
+            out.append(r"\subsection{" + esc_tex_text(title) + "}")
             i += 1
             continue
 
